@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+img {vertical-align: top;}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper {
+    width: 1000px;
+    height: 650px;
+    margin: 30px auto;
+    display: flex;
+}
+aside {
+    width: 200px;
+    height: 100%;
+    /* background-color: #bbb; */
+}
+aside .logo {
+    height: 100px;
+    /* background-color: #aaa; */
+    display: flex;
+    align-items: center;
+}
+aside nav {
+    height: 550px;
+    margin-left: 10px;
+    margin-top: 30px;
+    z-index: 1;
+}
+aside nav ul {
+    position: relative;
+}
+aside nav ul li {
+    text-align: center;
+    line-height: 30px;
+    width: 180px;
+    
+}
+nav ul li a {
+    background-color: #333;
+    color: #fff;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: darkred;
+    color: #fff;
+    display: block;
+}
+nav ul ul {
+    display: none;
+    position: absolute;
+    left: 95%;
+    top:-20px;
+    width: 100%;
+    height: 200px; 
+    z-index: 1;
+}
+nav ul ul li a {
+    background-color: beige;
+    color: #333;
+    display: block;
+}
+main {
+    width: 800px;
+    height: 100%;
+    /* background-color: #bbb; */
+}
+section h2.hidden {
+    display: none;
+}
+/*SLIDE*/   
+.slideWrapper {
+    width: 800px;
+    height: 350px;
+    overflow: hidden;
+}
+.container {
+    width: 2400px;
+    
+}
+.slide {
+    float: left;
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.slide h3 {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    padding: 10px;
+}
+.content {
+    height: 200px;
+    /* background-color: #aaa; */
+    display: flex;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.notice, .gallery {
+    margin: 20px 10px;
+}
+.notice h3, .gallery h3 {
+    background-color: darkred;
+    color: #fff;
+    display: inline;
+    padding: 3px;
+}
+.notice ul, .gallery ul {
+    border-top: 3px solid darkred;
+    padding: 5px 3px;
+}
+.link {
+    padding: 5px 3px;
+}
+.notice li {
+    line-height: 30px;
+}
+.notice li a {
+    font-size: 13px;
+    padding: 10px auto;
+}
+.notice li:nth-of-type(even) a, .notice li:nth-of-type(even) a span{
+    display: block;
+    background-color: darkred;
+    color: #fff;
+}
+.notice li a span {
+    float: right;
+}
+.gallery ul {
+    display: flex;
+    justify-content:space-evenly;
+    align-content: center;
+}
+.gallery img {
+    width: 75px;
+    margin-top: 20px;
+    margin-right: 5px;
+}
+.gallery img:hover {
+    opacity: 0.5;
+}
+.link {
+    position: relative;
+}
+.link h3 {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100px;
+    background-color: #aaa;
+    text-align: center;
+}
+footer p {
+    font-weight: bold;
+}
+.sns_family {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 200px;
+}
+.sns_family ul {
+    display: flex;
+    justify-content: right;
+}
+.sns_family ul li a {
+    margin-right: 10px;
+}
+.sns_family>* {
+    margin-top: 5px;
+}
+.sns_family img {
+    width: 50px;
+}
+#popup {
+    position: fixed;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    display: none;
+}
+.popup_content {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 350px;
+    height: 140px;
+    text-align: justify;
+    padding: 20px;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;   
+}
+#popup.active {
+    display: block;
+}
+.popup_content h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.popup_content .close {
+    float: right;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    cursor: pointer;
+}
+#popup ul {
+    list-style: circle;
+}

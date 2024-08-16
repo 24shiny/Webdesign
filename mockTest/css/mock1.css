@@ -1,0 +1,235 @@
+/*inital settings*/
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    box-sizing: border-box;
+}
+img {
+    vertical-align: top;
+}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+/*wireframe*/
+.wrapper {
+    width: 1200px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px;
+}
+/*header*/
+header {
+    background-color: #aaa;
+    height: 100px;
+    display: flex;
+    position: relative;
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    width: 200px;
+    height: 100%;
+    float: left;
+}
+header nav {
+    /* background-color: #999; */
+    width: 800px;
+    height: 2rem;
+    float: right;
+    position: absolute;
+    left: 30%;
+    top: 30%;
+    z-index: 3;
+}
+header nav li {
+    float: left;
+    width: 200px;
+    text-align: center;
+    line-height: 30px;
+}
+header nav li a {
+    background-color: #333;
+    color: #fff;
+    display: block;
+}
+header nav li a:hover {
+    background-color: aquamarine;
+}
+header nav ul ul {
+    display: none;
+}
+header nav ul ul a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+}
+/*slide*/
+.slidewrapper {
+    height: 300px;
+    background-color: #bbb;
+    overflow: hidden;
+    
+}
+.container {
+    height: 900px;
+}
+.slide {
+    position: relative;
+}
+.slide h2 {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 5px;
+}
+main section {
+    width: 400px;
+    height: 200px;
+    float: left;
+}
+main .hidden {
+    display: none;
+}
+/* main .notice {
+    background-color: #aaa;
+} */
+/* main .banner {
+    background-color: #bbb;
+}
+main .link {
+    background-color: #ccc;
+} */
+/*notice*/
+.notice{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.tabMenu li{
+    float: left;
+    border: 1px solid;
+    border-bottom: none;
+    z-index: 1;
+    top:1px;
+    position: relative;
+    padding: 2px;
+}
+.tabMenu li.active {
+    background-color: aquamarine;
+}
+.tabContent{
+    border: 1px solid;
+    height: 150px;
+    padding: 5px;
+    line-height: 30px;
+}
+#notice li:nth-of-type(even){
+    background-color: #fff;
+    color: #333;
+}
+#notice li:hover{
+    background-color: aquamarine;
+}
+#notice span {
+    float: right;
+}
+.tabContent div {
+    display: none;
+}
+.tabContent div.active {
+    display: block;
+}
+#gallery ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+.banner, .link {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img, .link img {
+    width: 390px;
+    height: 180px;
+}
+main h2 {
+    z-index: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.3);
+    color: #fff;
+    padding: 5px;
+}
+/*footer*/
+footer {
+    height: 100px;
+    background-color: #ebebeb;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer .copy {
+    font-weight: bold;
+}
+footer ul{
+    display: flex;
+}
+footer ul li {
+    margin-right: 10px;
+}
+/*popup*/
+#popup {
+    position:fixed;
+    left: 0;
+    right: 0;
+    top:0;
+    bottom: 0;
+    z-index: 2;
+    display: none;
+}
+#popup.active {
+    display: block;
+}
+#popup .popupContent {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 180px;
+    background-color: #ebebeb;
+    text-align: justify;
+    box-shadow: 0 0 10px;
+}
+.popupContent h2 {
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.popupContent p {
+    margin: 15px;
+}
+.popupContent .close {
+    float: right;
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 2px;
+    width: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+

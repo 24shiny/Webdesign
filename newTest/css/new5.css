@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+img {
+    vertical-align: top;
+}
+.cf:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+main {
+    height: calc(100vh - 120px);
+    background-color: #bbb;
+    display: flex;
+}
+aside {
+    width: 200px;
+    height: 100%;
+}
+section .hidden {
+    display: none;
+}
+.content {
+    width: 500px;
+    height: 100%;
+    background-color: #ccc;
+}
+footer {
+    height: 120px;
+    background-color: #aaa;
+    display: flex;
+}
+footer .logo {
+    width: 200px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.footerContent {
+    flex: 1;
+    height: 100%;
+    box-sizing: border-box;
+}
+.footerContent>* {
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 1%;
+}
+.footerSpotMenu {
+    display: flex;
+    align-items: flex-end;
+}
+.footerSpotMenu li {
+    padding-right: 15px;
+}
+.footerContent p {
+    font-weight: bold;    
+}
+/*nav*/
+nav {
+    border: 1px solid;
+    width: 180px;
+    margin: 10px;
+}
+nav ul li {
+    text-align: center;
+    line-height: 40px;
+}
+nav ul li a:hover {
+    background-color: skyblue;
+    transition: 0.4s;
+    display: block;
+}
+nav ul ul {
+    display: none;
+}
+nav ul ul li a {
+    background-color: #ebebeb;
+    display: block;
+}
+.spotMenu {
+    display: flex;
+    justify-content: center;
+}
+.spotMenu li {
+    padding: 0 10px;
+}
+.spotMenu li {
+    border-right: 1px solid;
+}
+.spotMenu li:last-of-type {
+    border-right: none;
+}
+.spotMenu li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+.link {
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 100%;
+}
+.link h2 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+.link p {
+    font-size: 13px;
+    text-align: justify;
+}
+#rose {
+    width: 100px;
+    height: 50%;
+    object-fit: cover;
+}
+.link img {
+    margin: 5px;
+}
+#notice, #gallery {
+    height: 30%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5% 1%;
+}
+#notice li {
+    line-height: 30px;
+}
+#notice ul {
+    padding: 5px;
+}
+#notice li:hover {
+    background-color: #ebebeb;
+    font-weight: bold;
+}
+#notice span {
+    float: right;
+}
+#gallery ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    padding: 5px;
+}
+#gallery h3 {
+    font-size: 15px;
+}
+#notice h2, #gallery h2 {
+    background-color: #333;
+    color: #fff;
+    display: inline-block;
+    border-radius: 5px 5px 0 0 ;
+    font-size: 18px;
+    padding: 2px;
+}
+#notice ul, #gallery ul {
+    border: 1px solid;
+    width: 98%;
+}
+.banner {
+    height: 20%;
+    width: 100%;
+    /* background-color: antiquewhite; */
+}
+.banner ul {
+    display: flex;
+}
+.banner img {
+    width: 125px;
+    margin: 30% 0;
+}
+.container {
+    width: 300%;
+    height: 100%;
+    display: flex;
+}
+.slideWrapper {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+.container {
+    width: 300%;
+    height: 100%;
+    display: flex;
+    position: relative;
+}
+.slide {
+    width: calc(100%/3);
+    height: 100%;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#popup {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+    background-color: rgba(0,0,0,0.5);
+}
+#popup.active {
+    opacity: 1;
+    visibility: visible;
+}
+.popupContent {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 40%;
+    height: 20%;
+    box-sizing: border-box;
+    padding: 1.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
+
+.popupContent h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.popupContent p {
+    text-align: justify;
+}
+.close {
+    position: absolute;
+    right: 3%;
+    bottom: 6%;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 5px;
+    cursor: pointer;
+}

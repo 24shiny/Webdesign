@@ -1,0 +1,19 @@
+
+main {
+    display: flex;
+}
+main div {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main div h1 {
+    margin-bottom: 0;
+}
+main div:first-of-type {
+    background-color: aquamarine;
+}
+main div:nth-of-type(2){
+    background-color: blanchedalmond;
+}

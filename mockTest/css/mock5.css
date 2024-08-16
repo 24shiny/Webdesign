@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style : none;
+    text-decoration: none;
+    color: #333;
+}
+img {vertical-align: top;}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper {
+    width: 1200px;
+    height: 600px;
+    margin: 30px auto;
+}
+header {
+    height: 100px;
+    /* background-color: #aaa; */
+    display: flex;
+    align-items: center;
+}
+header .logo {
+    text-align: center;
+    width: 300px;
+    /* background-color: #999 */
+}
+header nav {
+    width: 800px;
+    position: relative;
+    left: 8%;
+    z-index: 1;
+}
+header nav ul li {
+    float: left;
+    line-height: 30px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+}
+header nav ul li a {
+    background-color: #333;
+    color: #fff;
+    display: block;
+}
+header nav ul li a:hover {
+    background-color: skyblue;
+}
+header nav ul ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+header nav ul li li a {
+    background-color: #fff;
+    color: #333;
+    display: block;
+}
+.slideWapper{
+    height: 300px;
+    overflow: hidden;
+}
+.container {
+    height: 900px;
+}
+.slide {
+    position: relative;
+}
+.slide h2 {
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 5px;
+}
+main {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    /* background-color: #aaa; */
+}
+main section {
+    width: 33.33%;
+    margin: 15px;
+}
+main h2.hidden {
+    display: none;
+}
+.notice {
+    display: flex;
+    flex-direction: column;
+}
+.tabMenu li {
+    float: left;
+    border: 1px solid;
+    border-bottom: none;
+    position: relative;
+    top: 1px;
+    z-index: 1;
+    padding: 3px;
+}
+.tabMenu li.active {
+    background-color: skyblue;
+}
+.tabContent div {
+    line-height: 30px;
+    border: 1px solid;
+    padding: 3px;
+    display: none;
+}
+.tabContent div.active {
+    display: block;
+}
+#notice li:nth-of-type(even) {
+    background-color: #bebebe;
+}
+#notice li:hover {
+    font-weight: bold;
+}
+#notice span {
+    float: right;
+}
+#gallery ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+}
+#gallery img {
+    width: 100px;
+}
+#gallery img:hover {
+    opacity: 0.5;
+}
+.banner, .link {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.banner h2, .link h2 {
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    padding: 3px;
+}
+footer {
+    height: 100px;
+    background-color: #ebebeb;
+    display: flex;
+    align-items: center;
+}
+footer .logo {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+footer .menu_copy {
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+.menu_copy ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu_copy p {
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+#popup {
+    position: fixed;
+    left: 0; top: 0; right: 0; bottom: 0;
+    display: none;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+#popup.active {
+    display: block;
+}
+.popupContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 480px;
+    height: 200px;
+    text-align: justify;
+    padding: 15px;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+}
+.popupContent h2 {
+    text-align: center;
+    margin: 20px auto;
+}
+.popupContent .close {
+    cursor: pointer;
+    float: right;
+    width: 50px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 5px;
+}

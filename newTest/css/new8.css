@@ -1,0 +1,242 @@
+@charset "utf-8";
+
+.hidden {
+    display: none;
+}
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+img {vertical-align: top;}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+main {
+    display: flex;
+    height: calc(100vh - 120px);
+    /* background-color: #aaa; */
+}
+aside {
+    width: 200px;
+    height: 100%;
+}
+aside h1 {
+    margin: 5% 0;
+}
+nav {
+    width: 180px;
+    margin: 10px;
+    border: 1px solid;
+    z-index: 1;
+}
+nav ul li {
+    text-align: center;
+    line-height: 30px;
+    position: relative;
+    z-index: 1;
+    font-size: 80%;
+}
+nav ul li a:hover {
+    display: block;
+    background-color: darkred;
+    color: #fff;
+}
+nav ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+nav ul ul li {
+    width: 200px;
+}
+nav ul ul li a {
+    background-color: #ebebeb;
+    display: block;
+}
+.mainContent {
+    width: 400px;
+    height: 100%;
+    /* background-color: #ccc; */
+}
+.mainContent>* {
+    width: 100%;
+    height: 25%;
+}
+.mainContent div:nth-of-type(even) {
+    /* background-color: #fff; */
+}
+.link {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+}
+.link img {
+    width: 30%;
+}
+.link a img {
+    width: 30px;
+}
+.linkContent {
+    box-sizing: border-box;
+    padding: 0 1%;
+    text-align: justify;
+    height: 80%;
+    margin: 5% 1%;
+    overflow: scroll;
+}
+.linkContent h3 {
+    font-size: 80%;
+}
+.linkContent p {
+    font-size: 60%;
+}
+#notice, #gallery {
+    box-sizing: border-box;
+    padding: 1%;
+}
+#notice h3, #gallery h3 {
+    display: inline-block;
+    background-color: darkred;
+    color: #fff;
+    font-size: 80%;
+    position: relative;
+    top: 1px;
+}
+#notice ul, #gallery ul {
+    border: 2px darkred solid;
+    padding: 0.5%;
+}
+#notice li {
+    font-size: 60%;
+    margin: 0 1%;
+}
+#notice li a:hover {
+    display: block;
+    background-color: #ebebeb;
+    font-weight: bold;
+}
+#notice span {
+    float: right;
+}
+#gallery ul {
+    display: flex;
+    justify-content: center;
+}
+#gallery img {
+    width: 80%;
+    margin: 1% 5%;
+}
+.slideWrapper {
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+}
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner ul {
+   display: flex;
+}
+.banner img {
+    width: 100px;
+}
+.container {
+    width: 100%;
+    height: 300%;
+    position: relative;
+}
+.slide {
+    width: 100%;
+    height: calc(100%/3);
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+footer {
+    display: flex;
+    height: 120px;
+    /* background-color: #bbb; */
+}
+footer .logo, footer .familySite {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 100%;
+}
+.footerContent {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.spotMenu{
+    display: flex;
+}
+.spotMenu li {
+    padding: 0 10px;
+}
+.spotMenu li:hover {
+    text-decoration: underline;
+}
+.spotMenu li a {
+    font-size: 80%;
+}
+.footerContent p {
+    font-weight: bold;
+    font-size: 80%;
+}
+#popup {
+    position: fixed;
+    left: 0; right: 0; top: 0; bottom: 0;
+    display: none;
+}
+#popup.active {
+    display: block;
+}
+.popupContent {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    background-color: #fff;
+    width: 50%;
+    height: 30%;
+    box-sizing: border-box;
+    padding: 2%;
+    box-shadow: 0 0 10px;
+    border-radius: 5px;
+}
+.popupContent h2 {
+    text-align: center;
+    font-size: 125%;
+    margin-bottom: 1%;
+}
+.popupContent {
+    text-align: justify;
+    font-size: 80%;
+}
+.popupContent .close {
+    float: right;
+    display: block;
+    background-color: #ebebeb;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    padding: 1%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}

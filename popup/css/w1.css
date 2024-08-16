@@ -1,0 +1,122 @@
+@charset "utf-8";
+* {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+.cf:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.wrapper {
+    width: 1200px;
+    margin:0 auto;
+}
+header {
+    height: 100px;
+    background-color: #aaa;
+}
+header .logo {
+    width: 200px;
+    height: 100%;
+    background-color: #999;
+    float: left;
+}
+header nav {
+    width: 1000px;
+    height: 100%;
+    background-color: #888;
+    float: right;
+}
+.slide {
+    height: 300px;
+    background-color: #bbb;
+}
+main {
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+}
+main div {
+    width: 400px;
+    height: 100%;
+    padding: 10px;
+}
+main .notice {
+    background-color: #fff;
+}
+main .notice ul {
+    line-height: 30px;
+}
+main .notice ul li {
+    cursor: pointer;
+}
+main .notice ul li:nth-child(even){
+    background-color: beige;
+
+}
+main .banner {
+    
+    background-color: #666;
+}
+main .link {
+    background-color: #555;
+}
+footer {
+    height: 100px;
+    background-color: #ddd;
+    display: flex;
+}
+footer .logo{
+    width: 200px;
+    background-color: #444;
+}
+footer .copy{
+    width: 800px;
+    background-color: #333;
+}
+footer .sns{
+    width: 200px;
+    background-color: #222;
+}
+#popup{
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: none;
+}
+#popup .popup_content h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+#popup .popup_content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 180px;
+    text-align: justify;
+    background-color: #fff;
+    padding: 30px;
+    /* border: #222 solid; */
+    box-shadow: 0 0 10px #333;
+    border-radius: 5px;
+}
+#popup .popup_content .close {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+}
+#popup .active {
+    display: block;
+}

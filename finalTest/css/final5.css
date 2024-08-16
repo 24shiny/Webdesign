@@ -1,0 +1,175 @@
+@charset "utf-8";
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+}
+.cf:after {
+    content: '';
+    clear: both;
+    display: block;
+}
+aside {
+    width: 200px;
+    height: 600px;
+    background-color: #aaa;
+}
+nav {
+    border: 1px solid;
+    text-align: center;
+    font-size: 20px;
+    width: 180px;
+    margin: 10px;
+}
+nav ul li {
+    position: relative;
+    z-index: 1;
+}
+nav ul li a {
+    background-color: darkred;
+    color:#fff;
+    display: block;
+}
+nav ul li a:hover {
+    background-color: #fff;
+    color:#333;
+    display: block;
+}
+nav ul ul {
+    position: absolute;
+    left: 100%;
+    top: 0;
+    display: none;
+}
+nav ul ul li a {
+    background-color: grey;
+    color:#fff;
+    display: block;
+}
+nav ul ul li {
+    width: 200px;
+}
+body {
+    display: flex;
+}
+main {
+    flex: 1;
+    height: 600px;
+    /* background-color: #bbb; */
+}
+section {
+    width: 100%;
+    height: 50%;
+}
+.slideContent {
+    position: relative;
+}
+.hidden {
+    display: none;
+}
+.slideWrapper {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+.container {
+    position: relative;
+    width: 100%;
+    height: 900px;
+}
+.slide {
+    width: 100%;
+    height: 300px;
+    float: left;
+}
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.banner {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 80%;
+    /* background-color: #fff; */
+    z-index: 1;
+}
+.banner ul {
+    width: 100%;
+    height: 95%;
+    margin: 2.5%;
+}
+.banner ul li {
+    width: 100%;
+    height: 33%;
+}
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/*tab*/
+.tabMenu {
+    position: relative;
+    z-index: 2;
+    top: 1px;
+    text-align: center;
+}
+.tabMenu li {
+    float: left;
+    
+}
+.tabMenu li a {
+    display: block;
+    border: 1px solid;
+    border-bottom: none;
+    padding: 3px;
+}
+.tabMenu li:first-child {
+    border-right: none;
+}
+.tabMenu li.active a {
+    background-color: gray;
+    color: #fff;
+    display: block;
+}
+.tabContent {
+    z-index: -1;
+    box-sizing: border-box;
+    position: relative;
+    border: 1px solid;
+    width: 100%;
+    height: 70%;
+}
+.tabContent div {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.tabContent div.active {
+    display: block;
+}
+#notice ul {
+    line-height: 35px;
+}
+#notice span {
+    float: right;
+}
+#notice ul li {
+    padding: 0 1%;
+}
+#notice ul li:hover a,#notice ul li:hover span {
+    background-color: gray;
+    color: #fff;
+    font-weight: bold;
+    display: block;
+}
+#gallery ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
